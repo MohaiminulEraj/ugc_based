@@ -1,0 +1,24 @@
+.header-img {
+    display: flex;
+    justify-content: center;
+}
+
+.header-img>img {
+    width: 318px;
+    height: 146px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+
+element.style {
+    padding: 0;
+    /* width: 80%; */
+    height: 32px;
+}
+
+form input[type="text"] {
+    text-transform: lowercase;
+}

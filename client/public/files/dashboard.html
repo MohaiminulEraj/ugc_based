@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row" >
+            <div class="col-lg-3 col-md-2 col-sm-12 header-img">
+                <img src="../img/ugc-final-1589729658965.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 mt-4">
+                <h3 class="header-text">University Grant Comission<br>of<br>Bangladesh</h3>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-12 header-img">
+                <img src="../img/digital_bd.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <hr class="mb-0" style="border: 3px solid darkred;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="index.html">Online Marketplace</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="/">HOME</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="mailto:eraj471@gmail.com">MAIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/addStudent">ADD DATA</a>
+                </li>
+            </ul>
+            <!-- <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Welcome</a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row" >
+            <div class="col-md-6 col-sm-12" id="studentsPieChart" style="width: 900px; height: 500px;"></div>
+            <div class="col-md-6 col-sm-12" id="teachersPieChart" style="width: 900px; height: 500px;"></div>
+
+            <div class="col-md-6 col-sm-12" id="phdBarChart"></div>
+            <div class="col-md-6 col-sm-12" id="lecturerBarChart"></div>
+
+            <div class="col-lg-12 col-6" id="avgSalaryColumnChart" style="height: 450px;"></div>
+
+            <div class="col-md-4 col-sm-12" id="studentsEngDonutChart" style="width: 1000px; height: 500px;"></div>
+            <div class="col-md-4 col-sm-12" id="studentsBbaDonutChart" style="width: 1000px; height: 500px;"></div>
+
+            <div class="col-md-4" id="studentsOtherDeptDonutChart" style="width: 1000px; height: 500px;"></div>
+
+            <div class="col-lg-12 col-6" id="yearlyStdAreaChart" style="width: 100%; height: 500px;"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/user_api.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

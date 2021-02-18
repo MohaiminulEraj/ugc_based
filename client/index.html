@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row" >
+            <div class="col-lg-3 col-md-2 col-sm-12 header-img">
+                <img src="img/ugc-final-1589729658965.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 mt-4">
+                <h3 class="header-text">University Grant Comission<br>of<br>Bangladesh</h3>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-12 header-img">
+                <img src="img/digital_bd.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <hr class="mb-0" style="border: 3px solid darkred;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="index.html">Online Marketplace</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/dashboard">DASHBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="mailto:eraj471@gmail.com">MAIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">FAQ</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link active" data-toggle="modal" data-target="#loginModal" href="#">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><i class="fa fa-lock"></i> Login:</h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+  
+            <!--Body-->
+            <div class="container modal-body" id="loginclick">
+                <form action="/" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control" id="myUsername" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" id="myPassword" placeholder="Password" required>
+                    </div>
+                    <!-- <div class="form-check mb-2 mr-sm-2">
+                        <label style="cursor: pointer;" class="form-check-label">
+                          <input class="form-check-input" onclick="showPassBtn()" type="checkbox"> Show password
+                        </label>
+                      </div> -->
+                    <div class="form-group">
+                        <button style="float: right;" type="submit" id="loginBtn" class="btn btn-outline-success">Login</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+    
+          <!--Controls-->
+          <div class="controls-top" style="text-align: center;">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <!--/.Controls-->
+    
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+    
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+    
+            <!--First slide-->
+            <div class="carousel-item active">
+    
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/1.jpg" alt="IUB">
+                  </div>
+                </div>
+    
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/2.jpg" alt="IUB">
+                  </div>
+                </div>
+    
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/3.jpg" alt="IUB">
+                  </div>
+                </div>
+                
+                <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height: 170px;" src="img/4.jpg" alt="IUB">
+                    </div>
+                  </div>
+              </div>
+    
+            </div>
+            <!--/.First slide-->
+    
+            <!--Second slide-->
+            <div class="carousel-item">
+    
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/5.jpg"  alt="NSU">
+                  </div>
+                </div>
+    
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/6.jpg" alt="NSU">
+                  </div>
+                </div>
+    
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" style="height: 170px;" src="img/7.jpg" alt="NSU">
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height: 170px;" src="img/8.jpg" alt="NSU">
+                    </div>
+                  </div>
+              </div>
+    
+            </div>
+            <!--/.Second slide-->
+    
+            <!--Third slide-->
+            <div class="carousel-item">
+    
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height: 170px;" src="img/9.jpg"  alt="AIUB">
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height: 170px;" src="img/10.jpg" alt="AIUB">
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height: 170px;" src="img/11.jpg" alt="AIUB">
+                    </div>
+                  </div>
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                      <div class="card mb-2">
+                        <img class="card-img-top" style="height: 170px;" src="img/12.jpg" alt="AIUB">
+                      </div>
+                    </div>
+                </div>
+      
+              </div>
+             <!--/.Third slide-->    
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+
+      <footer style="margin-top: 210px; text-align: center;">
+          <h4>Contact Us</h4>
+          <hr style="border: 1px solid black; width: 350px;">
+          <div class="front-icon">
+            <a href="https://twitter.com/MohaiminulEraj" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>&emsp;<a href="https://www.facebook.com/Eraj.K4linux" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>&emsp;<a href="https://www.facebook.com/Eraj.K4linux" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+      </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/user_api.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
